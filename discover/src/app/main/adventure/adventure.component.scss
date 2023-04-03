@@ -1,0 +1,52 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-image: url("../../../assets/images/boat-adventure.jpg");
+  text-align: center;
+
+  width: 100%;
+  height: 80vh;
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: #fff;
+  text-shadow: 2px 2px 2px #333;
+
+  button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #ffffff;
+    background: #78d18d;
+    font-weight: bold;
+    font-size: medium;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+h1 {
+  font-size: 80px;
+  padding: 10px;
+  border-bottom: 2px solid #fff;
+  text-shadow: 2px 2px 2px #333;
+}
+
+h3,
+p {
+  padding: 10px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 2px #333;
+}
