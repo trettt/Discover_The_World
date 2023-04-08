@@ -7,7 +7,6 @@ import { AdventureComponent } from './header/adventure.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { ServicesWrapperComponent } from './services-wrapper/services-wrapper.component';
 import { CitiesWrapperComponent } from './cities-wrapper/cities-wrapper.component';
-import { BodyComponent } from './body/body.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +15,6 @@ import { BodyComponent } from './body/body.component';
     SearchBarComponent,
     ServicesWrapperComponent,
     CitiesWrapperComponent,
-    BodyComponent,
   ],
   imports: [CommonModule, MainRoutingModule],
 })

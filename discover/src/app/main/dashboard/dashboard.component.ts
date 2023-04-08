@@ -7,8 +7,13 @@ import { Component } from '@angular/core';
 })
 export class DashboardComponent {
   bodyVisible = false;
+  header = 'NEW ADVENTURE';
 
   makeItVisible() {
     this.bodyVisible = true;
+  }
+
+  onCitySelected(cityName: string) {
+    this.header = cityName;
   }
 }

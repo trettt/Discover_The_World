@@ -7,7 +7,7 @@
       <img [src]="city.image" />
       <h4>{{ city.name }}</h4>
       <p>{{ city.description }}</p>
-      <button>VISIT NOW</button>
+      <button (click)="selectedCity(city.name)">VISIT NOW</button>
     </div>
   </div>
 </div>

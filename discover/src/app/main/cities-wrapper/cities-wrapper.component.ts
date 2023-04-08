@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { City } from 'src/app/interfaces/city';
 import { CitiesService } from 'src/app/services/cities.service';
 
@@ -9,10 +9,15 @@ import { CitiesService } from 'src/app/services/cities.service';
 })
 export class CitiesWrapperComponent implements OnInit {
   cities: City[] = [];
+  @Output() cityToVisit = new EventEmitter<string>();
 
   constructor(private serviceCities: CitiesService) {}
 
   ngOnInit(): void {
     this.cities = this.serviceCities.cities;
+  }
+
+  selectedCity(cityName: string) {
+    this.cityToVisit.emit(cityName);
   }
 }
