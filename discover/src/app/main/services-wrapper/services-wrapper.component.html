@@ -3,10 +3,7 @@
     &nbsp;&nbsp;&nbsp;&nbsp;OUR SERVICES&nbsp;&nbsp;&nbsp;&nbsp;
   </p>
   <div class="services">
-    <div
-      class="service"
-      *ngFor="let service of serviceInformations.informationServices"
-    >
+    <div class="service" *ngFor="let service of avaiblableServices">
       <h3>{{ service.title }}</h3>
       <h4>{{ service.subtitle }}</h4>
       <p>{{ service.description }}</p>

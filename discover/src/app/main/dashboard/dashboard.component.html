@@ -1,2 +1,2 @@
-<app-adventure></app-adventure>
-<app-body *ngIf="adventureService.adventureVisible"></app-body>
+<app-adventure (showTheBody)="makeItVisible()"></app-adventure>
+<app-body *ngIf="bodyVisible"></app-body>

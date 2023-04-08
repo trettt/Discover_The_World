@@ -9,6 +9,7 @@ import { CitiesService } from 'src/app/services/cities.service';
 })
 export class CitiesWrapperComponent implements OnInit {
   cities: City[] = [];
+
   constructor(private serviceCities: CitiesService) {}
 
   ngOnInit(): void {

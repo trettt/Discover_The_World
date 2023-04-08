@@ -1,6 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { CitiesService } from 'src/app/services/cities.service';
-import { DisplayBodyService } from 'src/app/services/display-body.service';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-adventure',
@@ -8,12 +6,5 @@ import { DisplayBodyService } from 'src/app/services/display-body.service';
   styleUrls: ['./adventure.component.scss'],
 })
 export class AdventureComponent {
-  adventureVisible = false;
-
-  constructor(private citiesService: DisplayBodyService) {}
-
-  discoverButtonClicked() {
-    this.adventureVisible = true;
-    this.citiesService.setVisibility(this.adventureVisible);
-  }
+  @Output() showTheBody = new EventEmitter<void>();
 }
