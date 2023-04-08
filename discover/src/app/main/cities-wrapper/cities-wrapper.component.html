@@ -1,0 +1,13 @@
+<div class="container">
+  <p class="title">
+    &nbsp;&nbsp;&nbsp;&nbsp;MOST POPULAR&nbsp;&nbsp;&nbsp;&nbsp;
+  </p>
+  <div class="cities">
+    <div class="city" *ngFor="let city of cities">
+      <img [src]="city.image" />
+      <h4>{{ city.name }}</h4>
+      <p>{{ city.description }}</p>
+      <button>VISIT NOW</button>
+    </div>
+  </div>
+</div>
