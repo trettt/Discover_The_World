@@ -7,6 +7,7 @@ import { AdventureComponent } from './header/adventure.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { ServicesWrapperComponent } from './services-wrapper/services-wrapper.component';
 import { CitiesWrapperComponent } from './cities-wrapper/cities-wrapper.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,6 @@ import { CitiesWrapperComponent } from './cities-wrapper/cities-wrapper.componen
     ServicesWrapperComponent,
     CitiesWrapperComponent,
   ],
-  imports: [CommonModule, MainRoutingModule],
+  imports: [CommonModule, MainRoutingModule, FormsModule],
 })
 export class MainModule {}

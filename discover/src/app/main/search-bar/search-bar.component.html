@@ -1,4 +1,9 @@
 <div class="container">
   <p>Search & Book all our destinations</p>
-  <input type="search" placeholder="Select your city" />
+  <input
+    type="text"
+    placeholder="Search any city..."
+    [(ngModel)]="searchTerm"
+    (keyup)="onSearchTermChanged()"
+  />
 </div>

@@ -10,6 +10,7 @@ import { CitiesService } from 'src/app/services/cities.service';
 export class CitiesWrapperComponent implements OnInit {
   cities: City[] = [];
   @Output() cityToVisit = new EventEmitter<string>();
+  @Input() filteredCities: City[] = [];
 
   constructor(private serviceCities: CitiesService) {}
 

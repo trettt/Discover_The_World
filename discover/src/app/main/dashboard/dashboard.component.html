@@ -3,9 +3,12 @@
   (showTheBody)="makeItVisible()"
 ></app-adventure>
 <div *ngIf="bodyVisible">
-  <app-search-bar></app-search-bar>
+  <app-search-bar
+    (filteredCitiesChanged)="updateFilteredCities($event)"
+  ></app-search-bar>
   <app-services-wrapper></app-services-wrapper>
   <app-cities-wrapper
     (cityToVisit)="onCitySelected($event)"
+    [filteredCities]="filteredCities"
   ></app-cities-wrapper>
 </div>
