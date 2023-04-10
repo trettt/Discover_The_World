@@ -3,7 +3,10 @@
     &nbsp;&nbsp;&nbsp;&nbsp;MOST POPULAR&nbsp;&nbsp;&nbsp;&nbsp;
   </p>
   <div class="cities">
-    <div class="city" *ngFor="let city of filteredCities">
+    <div
+      class="city"
+      *ngFor="let city of filteredCities.length ? filteredCities : cities"
+    >
       <img [src]="city.image" />
       <h4>{{ city.name }}</h4>
       <p>{{ city.description }}</p>

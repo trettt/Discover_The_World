@@ -15,7 +15,7 @@ export class CitiesWrapperComponent implements OnInit {
   constructor(private serviceCities: CitiesService) {}
 
   ngOnInit(): void {
-    this.cities = this.serviceCities.cities;
+    this.cities = this.serviceCities.allCities;
   }
 
   selectedCity(cityName: string) {

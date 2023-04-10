@@ -15,7 +15,7 @@ export class SearchBarComponent implements OnInit {
   constructor(private citiesService: CitiesService) {}
 
   ngOnInit(): void {
-    this.cities = this.citiesService.cities;
+    this.cities = this.citiesService.allCities;
   }
 
   get filteredCities() {

@@ -5,7 +5,7 @@ import { City } from '../interfaces/city';
   providedIn: 'root',
 })
 export class CitiesService {
-  cities: City[] = [
+  private cities: City[] = [
     {
       name: 'Paris',
       description:
@@ -61,4 +61,8 @@ export class CitiesService {
       image: '../../../assets/images/istanbul.jpg',
     },
   ];
+
+  get allCities(): City[] {
+    return this.cities;
+  }
 }
